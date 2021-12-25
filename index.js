@@ -31,7 +31,11 @@ setInterval(() => {
     }
 }, 10);
 
-
+document.body.onkeyup = function (e) {
+    if (e.keyCode == 32) {
+        jump();
+    }
+}
 
 function jump() {
     jumping = 1;
@@ -47,13 +51,4 @@ function jump() {
         }
         jmpCount++;
     }, 7);
-}
-
-document.getElementById('game').onclick = function changeContent() {
-    jump();
-}
-document.body.onkeyup = function (e) {
-    if (e.keyCode == 32) {
-        jump();
-    }
 }

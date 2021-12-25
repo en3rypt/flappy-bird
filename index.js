@@ -31,6 +31,12 @@ setInterval(() => {
     }
 }, 10);
 
+document.body.onkeyup = function (e) {
+    if (e.keyCode == 32) {
+        jump();
+    }
+}
+
 function jump() {
     jumping = 1;
     var jmpCount = 0;

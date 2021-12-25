@@ -52,3 +52,8 @@ function jump() {
         jmpCount++;
     }, 7);
 }
+
+document.getElementById('game').onclick = function changeContent() {
+
+    jump();
+}
